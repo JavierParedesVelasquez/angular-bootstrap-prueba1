@@ -1,0 +1,20 @@
+<h1>Home Components</h1>
+
+<hr>
+
+<h3>{{nombre}}</h3>
+
+<!-- En click se va llamar un metodo para que cuando se apreta el boton se cambie de nombre -->
+<!-- Y para eso se usa el click -->
+<button (click)="cambiarNombre()" type="button" class="btn btn-dark">Cambiar Nombre</button>
+
+
+<hr>
+
+
+<!-- Cuando el padre necesita pasarle informacion al hijo, lo mas sencillo es usar el input y un output -->
+<!-- El input nos va permitir a nosotros poder especificar un argumento que el componente va recibir en este caso app-hijo -->
+<!-- $event es para recibir el evento que recibir el valor del hijo -->
+<app-hijo [nombreHijo]="nombre"(cambioNombreHijo)="nombre = $event"></app-hijo>
+
+

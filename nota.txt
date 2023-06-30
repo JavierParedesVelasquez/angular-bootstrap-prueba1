@@ -1,0 +1,10 @@
+1. ng new proyecto-angular-prueba-1
+2. npm install bootstrap@5.2.3
+3. ng g m components/components --flat  (modulo)    flat es para que no cree carpeta
+4. ng g c components/navbar   (componente)
+5. ng g c pages/home
+6. ng generate module app-routing --flat --module=app   (generar app-routing)
+7. 
+
+
+
